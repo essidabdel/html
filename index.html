@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mon Portefeuille</title>
+    <link  href="styles.css" rel="stylesheet">
+        <title>Mon Portefeuille</title>
   </head>
   <body>
     <header>
       <h1>Mon Portefeuille</h1>
         <!-- Navbar -->
-      <nav>
-        <ul>
-            <li><a href="#accueil">accueil</a></li>
-          <li><a href="#about">à propos</a></li>
-          <li><a href="#travail">travail</a></li>
-          <li><a href="#cv">cv</a></li>
+      <nav id="navb">
+        <ul >
+            <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#travail">Travail</a></li>
+          <li><a href="#cv">Cv</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+  </br> </br>
     <main>
-      <section id="about">
-        <h2>À propos</h2>
-        <p>Bienvenue sur mon portefeuille en ligne.je suis encore étudiant en informatique de gestion</p>
+      </main>
+      <section id="about"  style="float: left; line-height:65px;">
+        <h2 style="text-decoration: underline;font-size: 30px;">À propos</h2>
+        <p style=" font-size: 26px; margin-left: 50px;" >Bienvenue sur mon portefeuille en ligne.<br> Je suis encore étudiant en informatique de gestion</p>
       </section>
-      <section id="travail" >
-        <h2>travail</h2>
+      <section id="cv" >
+        <h2>CV</h2>
+        <!-- Image -->
+       <img  src="cv abdel.png" alt="la photo n'est pas chargé"  width="400" height="450">
+     </section>
+      <section id="travail" st >
+        <h2>Travail</h2>
         <!-- Tableau -->
-        <table border="2">
+        <table border="2" class="tab">
           
-            <tr>
+            <tr class="ab">
               <th>Projet</th>
               <th>Description</th>
               <th>Technologies</th>
@@ -47,13 +55,11 @@
         
         </table>
       </section>
-      <section id="cv">
-         <h2>cv</h2>
-         <!-- Image -->
-        <img src="cv abdel.png" alt="la photo n'est pas chargé" width="500" height="500">
-      </section>
+      <br><br>
+      <fieldset>
+
       <section id="contact">
-        <h2>Contactez-moi</h2>
+        <legend><h2>Contactez-moi</h2></legend>
         <!-- Formulaire -->
         <form>
           <label >Nom :</label>
@@ -63,12 +69,17 @@
           <label >Message :</label><br>
           <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
           <input type="submit" value="Envoyer">
+          </br>
         </form>
       </section>
+    </fieldset>
     </main>
     <footer>
-      <p>©</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MhvKIv-uaOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+    </br>
+  </br>
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MhvKIv-uaOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
        clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <p>©</p> -->
   </body>
 </html>
+
